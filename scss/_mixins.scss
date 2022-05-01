@@ -1,0 +1,18 @@
+@mixin button($size, $height, $radius, $back-col, $col) {
+    width: $size;
+    height: $height;
+    border-radius: $radius; 
+    background-color: $back-col; 
+    color: $col;  
+}
+// @mixin breackpoint($point){
+//     @if$point ==lg{
+//         @media(max-width: 1430px){@content;}
+//     }
+//     @if$point ==md{
+//         @media(max-width: 768px){@content;}
+//     }
+//     @if$point ==xs{
+//         @media(max-width: 320px){@content;}
+//     }
+// }

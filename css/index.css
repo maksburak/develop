@@ -1,0 +1,617 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body span {
+  font-size: 14px;
+  font-family: "roboto";
+}
+body p {
+  font-family: "roboto";
+}
+body h1 {
+  font-family: "bold";
+}
+body h2 {
+  position: relative;
+  font-family: "bold";
+  font-size: 26px;
+  margin: 89px 0 35px;
+}
+body h3 {
+  font-family: "bold";
+  font-size: 24px;
+}
+body h4 {
+  font-family: "bold";
+  font-size: 14px;
+}
+body button {
+  cursor: pointer;
+}
+body img {
+  border-radius: 5px;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header .img-bg {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#F9D423), to(#FF4E50));
+  background-image: linear-gradient(0deg, #F9D423, #FF4E50);
+}
+header .img-bg > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0;
+}
+header nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav > h1 {
+  width: 50%;
+  font-family: "bold";
+  font-size: 20px;
+}
+header nav .log {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+header nav .log > button {
+  width: 90px;
+  height: 36px;
+  border-radius: 15px;
+  background-color: transparent;
+  color: #FFFFFF;
+  font-family: "regular";
+  font-size: 14px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+header nav .log > button:hover {
+  background-color: #FFFFFF;
+  color: black;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+header nav .log > button:last-child {
+  border: white solid 2px;
+}
+header nav .log > button:first-child {
+  border: transparent solid 2px;
+}
+header .in {
+  width: 100%;
+  padding: 46px 17.36% 0;
+  color: white;
+  z-index: 5;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .in > h1 {
+  margin-top: 147px;
+  text-align: center;
+  font-size: 52px;
+  font-family: "bold";
+}
+header .in > h4 {
+  margin: 28px 0 33px;
+}
+header .in > button {
+  width: 225px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #FF4E50;
+  color: #FFFFFF;
+  border: 2px solid #FF4E50;
+  font-size: 14px;
+  font-family: "bold";
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+header .in > button:hover {
+  background-color: #FFFFFF;
+  color: #FF4E50;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+main {
+  width: 100%;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 17.36% 0;
+}
+main > button {
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  color: #FF4E50;
+  border: #FF4E50 solid 2px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+main > button:hover {
+  background-color: #FF4E50;
+  color: #FFFFFF;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.how {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.how .step {
+  width: 32%;
+  height: 60vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.how .step > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.how .step .step-in {
+  margin: 0 25px 21px;
+  color: #FFFFFF;
+  position: absolute;
+}
+.how .step .step-in > button {
+  width: 70px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #FF4E50;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  font-family: "regular";
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.how .step .step-in > button:hover {
+  background-color: #FFFFFF;
+  color: #FF4E50;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.how .step .step-in > h3 {
+  margin: 18px 0 10px;
+}
+.how .step .step-in > span {
+  color: #E3E3E3;
+}
+
+.meet {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.meet .avatar {
+  width: 25%;
+  text-align: center;
+  margin: 0 0 55px;
+}
+.meet .avatar > h4 {
+  margin: 17px 0 12px;
+}
+.meet .avatar > span {
+  color: #999999;
+}
+
+.discover {
+  width: 100%;
+}
+.discover .rov {
+  width: 100%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.discover .rov > img {
+  width: 32%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.discover .rov1 {
+  margin: 20px 0 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.discover .rov1 > img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.discover .rov1 > img:first-child {
+  width: 32%;
+}
+.discover .rov1 > img:last-child {
+  width: 66%;
+}
+.discover .rov2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.discover .rov2 > img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.discover .rov2 > img:first-child {
+  width: 66%;
+}
+.discover .rov2 > img:last-child {
+  width: 32%;
+}
+
+form {
+  width: 482px;
+  height: 40px;
+  margin: 25px auto 100px;
+}
+form > input {
+  padding: 14px;
+  height: 40px;
+  width: 299px;
+}
+form > button {
+  width: 172px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #FF4E50;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  font-family: "regular";
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+form > button:hover {
+  background-color: #FFFFFF;
+  color: #FF4E50;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+footer {
+  width: 100%;
+  border-top: #FF4E50 solid 4px;
+  padding: 40px 17.36%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer > h4 {
+  font-size: 16px;
+  font-family: "regular";
+  color: #FF4E50;
+}
+footer .company > h4 {
+  margin-bottom: 11px;
+  font-size: 14px;
+}
+footer .company > p {
+  margin-top: 5px;
+  color: #999999;
+  text-align: left;
+}
+footer .company > span {
+  display: none;
+}
+footer .design > p {
+  font-family: "bold";
+  font-size: 10px;
+  color: #999999;
+  text-align: end;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "bold";
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "regular";
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@media screen and (max-width: 1430px) {
+  header .in {
+    padding: 46px 48px 0;
+  }
+
+  main {
+    padding: 0 10px 0;
+  }
+
+  footer {
+    padding: 40px 10px 0;
+  }
+}
+@media screen and (max-width: 760px) {
+  body {
+    width: 100%;
+  }
+  body h2 {
+    margin: 34px 0 15px;
+    text-align: center;
+  }
+  body > h4 {
+    text-align: center;
+  }
+
+  header .in {
+    padding: 20px 20px 0;
+  }
+  header .in > h1 {
+    margin-top: 27px;
+  }
+  header nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header nav .log {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header nav h1 {
+    text-align: center;
+    margin-top: 97px;
+  }
+
+  main {
+    padding: 0 10px 0;
+  }
+  main > button {
+    width: 280px;
+  }
+
+  .how {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .how .step {
+    width: 100%;
+    height: 30vh;
+    margin: 0 0 10px;
+  }
+
+  .meet {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 32px 0;
+  }
+  .meet .avatar {
+    width: 100%;
+    margin: 0 0 16px;
+  }
+
+  .discover {
+    width: 100%;
+  }
+  .discover .rov {
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .discover .rov > img {
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 10px;
+  }
+  .discover .rov1 {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .discover .rov1 > img:first-child {
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 10px;
+  }
+  .discover .rov1 > img:last-child {
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 10px;
+  }
+  .discover .rov2 {
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .discover .rov2 > img:first-child {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+  .discover .rov2 > img:last-child {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+
+  form {
+    width: 280px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 15px 0 40px;
+  }
+  form > input {
+    width: 280px;
+  }
+  form > button {
+    width: 280px;
+    height: 40px;
+    margin: 10px 0 0;
+  }
+
+  footer {
+    width: 100%;
+    padding: 19px 10px 22px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .company {
+    width: 60%;
+    text-align: center;
+  }
+  footer .company > h4 {
+    margin: 13px 0 0;
+  }
+  footer .company > p {
+    display: none;
+  }
+  footer .company > span {
+    display: contents;
+    color: #999999;
+    word-spacing: 10px;
+  }
+  footer .Partners > h4 {
+    margin: 6px 0 14px;
+  }
+  footer .design > p {
+    text-align: center;
+    margin-bottom: 7px;
+  }
+}

@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    // position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span{
+        font-size: 14px;
+        font-family: "roboto";
+        // color: #666666;
+    }
+    p{
+        font-family: "roboto";
+    }
+    h1{
+        font-family: "bold";
+    }
+    h2{
+        position: relative;
+        font-family: "bold";
+        font-size: 26px;
+        margin: 89px 0 35px;
+    }
+    h3{
+        font-family: "bold";
+        font-size: 24px;
+    }
+    h4{
+        font-family: "bold";
+        font-size: 14px;
+    }
+    button{
+        cursor: pointer;
+    }
+    img{
+        border-radius: 5px;
+    }
+}
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    .img-bg{
+        z-index: 2;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(0deg, #F9D423, #FF4E50,);
+        >img{
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            border-radius: 0;
+        }
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        >h1{
+            width: 50%;
+            font-family: "bold";
+            font-size: 20px;
+        }
+        .log{
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            >button{
+                @include button(90px, 36px, 15px, transparent, #FFFFFF);
+                // width: 90px;
+                // height: 36px;
+                // border-radius: 15px;
+                // background-color: transparent;
+                // color: #FFFFFF;
+                font-family: "regular";
+                font-size: 14px;
+                transition: .2s ease-in-out;
+            }
+            >button:hover{
+                background-color: #FFFFFF;
+                color: black;
+                transition: .2s ease-in-out;
+            }
+            >button:last-child{
+                border: white solid 2px;
+            }
+            >button:first-child{
+                border: transparent solid 2px;
+            }
+        }
+    }
+    .in{
+        width: 100%;
+        padding: 46px 17.36% 0;
+        color: white;
+        z-index: 5;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        >h1{
+            margin-top: 147px;
+            text-align: center;
+            font-size: 52px;
+            font-family: "bold";
+        }
+        >h4{
+            margin: 28px 0 33px;
+        }
+        >button{
+            @include button(225px, 40px, 20px, #FF4E50, #FFFFFF);
+            // width: 225px;
+            // height: 40px;
+            // border-radius: 20px;
+            // background-color: #FF4E50;
+            // color: #FFFFFF;
+            border: 2px solid #FF4E50;
+            font-size: 14px;
+            font-family: "bold";
+            transition: .2s ease-in-out;
+        }
+        >button:hover{
+            background-color: #FFFFFF;
+            color: #FF4E50;
+            transition: .2s ease-in-out;
+        }
+    }
+}
+main{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 17.36% 0;
+    // @include breackpoint(lg){
+    //     padding: 0 10px 0;
+    // }
+    >button{
+        // @include button(180px 40px 20px #FFFFFF #FF4E50);
+        width: 180px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #FFFFFF;
+        color: #FF4E50;
+        border: #FF4E50 solid 2px;
+        transition: .2s ease-in-out;
+    }
+    >button:hover{
+        background-color: #FF4E50;
+        color: #FFFFFF;
+        transition: .2s ease-in-out;
+    }
+}
+.how{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .step{
+        width: 32%;
+        height: 60vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        >img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+        .step-in{
+            margin: 0 25px 21px;
+            color: #FFFFFF;
+            position: absolute;
+            >button{
+                // @include button(70px, 20px, 10px);
+                width: 70px;
+                height: 20px;
+                border-radius: 10px;
+                background-color: #FF4E50;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 10px;
+                font-family: "regular";
+                transition: .2s ease-in-out;
+            }
+            >button:hover{
+                background-color: #FFFFFF;
+                color: #FF4E50;
+                transition: .2s ease-in-out;
+            }
+            >h3{
+                margin: 18px 0 10px;
+            }
+            >span{
+                color: #E3E3E3;
+            }
+        }
+    }
+}
+.meet{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .avatar{
+        width: 25%;
+        text-align: center;
+        margin: 0 0 55px;
+        >h4{
+            margin: 17px 0 12px;
+        }
+        >span{
+            color: #999999;
+        }
+    }
+}
+.discover{
+    width: 100%;
+    .rov{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: space-between;
+        >img{
+            width: 32%;
+            display: block;
+            object-fit: cover;
+        }
+    }
+    .rov1{
+        margin: 20px 0 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        >img{
+            display: block;
+            object-fit: cover;
+        }
+        >img:first-child{
+            width: 32%;
+        }
+        >img:last-child{
+            width: 66%;
+        }
+    }
+    .rov2{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        >img{
+            display: block;
+            object-fit: cover;
+        }
+        >img:first-child{
+            width: 66%;
+        }
+        >img:last-child{
+            width: 32%;
+        }
+    }
+}
+// .discover{
+//     width: 100%;
+//     .rov{
+//         width: 100%;
+//         height: 50vh;
+//         display: flex;
+//         justify-content: space-between;
+//         .sport{
+//             position: relative;
+//             width: 32%;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             text-align: center;
+//             >img{
+//                 position: absolute;
+//                 width: 100%;
+//                 height: 100%;
+//                 display: block;
+//                 object-fit: cover;
+//             }
+//             >h2{
+//                 position: absolute;
+//                 color: #FFFFFF;
+//                 margin: 0;
+//             }
+//         }
+//     }
+//     .rov1{
+//         margin: 20px 0 20px;
+//         width: 100%;
+//         height: 50vh;
+//         display: flex;
+//         justify-content: space-between;
+//         .game1{
+//             position: relative;
+//             width: 32%;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             text-align: center;
+//             >img{
+//                 position: absolute;
+//                 width: 100%;
+//                 height: 100%
+//                 display: block;
+//                 object-fit: cover;
+//             }
+//             >h2{
+//                 position: absolute;
+//                 color: #FFFFFF;
+//                 margin: 0;
+//             }
+//         }
+//         .game2{
+//             position: relative;
+//             width: 66%;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             text-align: center;
+//             >img{
+//                 position: absolute;
+//                 width: 100%;
+//                 height: 100%
+//                 display block;
+//                 object-fit: cover;
+//             }
+//             >h2{
+//                 position: absolute;
+//                 color: #FFFFFF;
+//                 margin: 0;
+//             }
+//         }
+//     }
+//     .rov2{
+//         width: 100%;
+//         display: flex;
+//         justify-content: space-between;
+//         >img{
+//             display: block;
+//             object-fit: cover;
+//         }
+//         >img:first-child{
+//             width: 66%;
+//         }
+//         >img:last-child{
+//             width: 32%;
+//         }
+//     }
+// }
+form{
+    width: 482px;
+    height: 40px;
+    margin: 25px auto 100px;
+    >input{
+        padding: 14px;
+        height: 40px;
+        width: 299px;
+    }
+    // >input::placeholder{
+    //     padding-left: 5px;
+    // }
+    >button{
+        // @include button(172px 40px 20px #FF4E50 #FFFFFF);
+        width: 172px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #FF4E50;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 14px;
+        font-family: "regular";
+        transition: .2s ease-in-out;
+    }
+    >button:hover{
+        background-color: #FFFFFF;
+        color: #FF4E50;
+        transition: .2s ease-in-out;
+    }
+}
+footer{
+    width: 100%;
+    border-top: #FF4E50 solid 4px;
+    padding: 40px 17.36%;
+    display: flex;
+    justify-content: space-between;
+    >h4{
+        font-size: 16px;
+        font-family: "regular";
+        color: #FF4E50;
+    }
+    .company{
+        >h4{
+            margin-bottom: 11px;
+            font-size: 14px;
+        }
+        >p{
+            margin-top: 5px;
+            color: #999999;
+            text-align: left;
+        }
+        >span{
+            display: none;
+        }
+    }
+    .design{
+        >p{
+            font-family: "bold";
+            font-size: 10px;
+            color: #999999;
+            text-align: end;
+        }
+    }
+}
